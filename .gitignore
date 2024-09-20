@@ -42,3 +42,8 @@ target/
 *.iws
 *.iml
 *.ipr
+
+
+### tesseract ###
+
+tessdata

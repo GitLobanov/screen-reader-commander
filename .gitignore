@@ -46,4 +46,4 @@ target/
 
 ### tesseract ###
 
-tessdata
+*.traineddata

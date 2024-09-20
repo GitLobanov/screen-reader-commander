@@ -1,2 +1,4 @@
 datapath=tessdata
 language=eng
+file.commands.name=commands.txt
+trigger.text=Generation completed

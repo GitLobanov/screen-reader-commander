@@ -38,7 +38,11 @@ public class ScreenReaderService {
                         triggerFound = true;
                         TimeUnit.SECONDS.sleep(5);
                     } else {
-                        System.out.println("Trigger not found, wait one minute...");
+                        if (recognizedText.contains("Generation in progress")) {
+                            System.out.println("Generation in progress, wait one minute...");
+                        } else {
+                            System.out.println("Trigger not found, wait one minute...");
+                        }
                         TimeUnit.MINUTES.sleep(1);
                     }
                 } catch (TesseractException | AWTException | InterruptedException e) {
